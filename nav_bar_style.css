@@ -10,7 +10,6 @@
     float: right;
 }
   
-  /* Style the links inside the navigation bar */
   .navbar a {
     float: left;
     color: black;
@@ -20,19 +19,16 @@
     font-size: 17px;
   }
   
-  /* Change the color of links on hover */
   .navbar a:hover {
     color: teal;
   }
   
-  /* Add a color to the active/current link */
   .navbar a.active {
     color: teal;
     text-decoration: underline;
     text-underline-offset: 5px;
   }
   
-  /* Hide the link that should open and close the topnav on small screens */
 .navbar .icon {
     display: none;
   }
@@ -44,7 +40,6 @@
     font-size: 16px;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
@@ -53,7 +48,6 @@
     }
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 600px) {
     .navbar.responsive {position: relative;}
     .navbar.responsive a.icon {
