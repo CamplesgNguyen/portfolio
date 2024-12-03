@@ -2,14 +2,48 @@
 <html lang="en">
 
 <head>
-  <title>Camplesg Nguyen Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <title>Camplesg Nguyen Portfolio | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/homepage_style.css">
+  <link rel="stylesheet" href="css/nav_bar_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <script id="topNavbar" src="navbar.js"></script>
+  <div class="navbar" id="navbar">
+    <p class="name">Camplesg Nguyen</p>
+    <div class="nav_buttons">    
+      <a href="index.html" class="active">Home</a>
+      <a href="/pages/projects.html">Projects</a>
+      <a href="/pages/skills.html">Skills</a>
+      <a href="/pages/contact.html">Contact</a>
+      <a href="/pages/about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="navbarSwitch()">
+      <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <script>
+      function navbarSwitch() {
+        var x = document.getElementById("navbar");
+        if (x.className == "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+      }
+  </script>
 
+  <div class="wrapbox">
+    <div class="outerbox_hp">
+      <img class="frame" src="assets/images/portrait.jpg" alt="Portrait"> 
+    </div>
+    <div class="hptextbox">
+      <h4 class="fontstyle">A Computer Science student at California State University, Fullerton with a strong passion for software development and problem-solving. I have worked on a variety of projects, and eager to apply my skills in real-world scenarios. My goal is to leverage my knowledge and skills to contribute to innovative projects and solve complex challenges in the tech industry.</h4>
+      <h5 class="fontstyle", style="font-style: italic;">It's not the end if you never give up</h5>
+    </div>
+  </div>
 </body>
 
 </html>

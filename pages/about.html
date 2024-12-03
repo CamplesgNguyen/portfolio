@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Camplesg Nguyen Portfolio | About</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/proj_style.css">
+  <link rel="stylesheet" href="/css/nav_bar_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar" id="navbar">
+    <p class="name">Camplesg Nguyen</p>
+      <div class="nav_buttons">    
+        <a href="../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html" class="active">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarSwitch()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+  </div>
+  
+  <script>
+      function navbarSwitch() {
+        var x = document.getElementById("navbar");
+        if (x.className == "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+      }
+  </script>
+  
+  <div style="width: 100vw; height: 100%; left:0; top: 0; position: absolute; z-index: -1; align-content: center; justify-content: center;">
+    <p class="headerfont">About</p>
+    <div class="outerbox">
+      <p class="ab bold" style="margin-right: 5px;">Name:</h4><p class="ab normal">Camplesg Nguyen</p><br>
+      <p class="ab bold" style="margin-right: 5px;">University:</h4><p class="ab normal">California State University, Fullerton</p><br>
+      <p class="ab bold" style="margin-right: 5px;">Year:</h4><p class="ab normal">Senior</p><br>
+      <p class="ab bold" style="margin-right: 5px;">Major:</h4><p class="ab normal">Computer Science</p><br>
+      <p class="ab bold" style="margin-right: 5px;">Minor:</h4><p class="ab normal">Software Engineering</p><br>
+      <a target="_blank" href="../assets/files/resume.pdf"><p class="ab normal" style="text-decoration: underline;">Resume</p></a><br><br>
+      <p class="ab bold" style="margin-right: 5px; font-size: 20px">Background:</p><br>
+        <p class="ab normal" style="margin-left: 10px;">I have always had a fascination with technology. Growing up, I was exposed very early to technology, having my own computer at the age of nine. The more I use my computer the more I wonder how it works. By high school, I started teaching myself simple scripting, following online tutorials, I created my very first macros. 
+          Then I explored all things about websites creation, learned about HTML and CSS, used the knowledge to make customization on myspace and create simple websites. At the end of my highschool journey, I found myself interested in programming, enjoy problem-solving, therefore, I chose Computer Science as my major in college.
+        </p><br>
+        <p class="ab bold" style="margin-right: 5px; font-size: 20px">Education:</p><br>
+        <p class="ab normal" style="margin-left: 10px;">
+          Westminster High school<br>
+          Orange Coast College - Associate - Computer Science<br>
+          California State University, Fullerton - Bachelor's - Computer Science<br>
+        </p><br>
+        <p class="ab bold" style="margin-right: 5px; font-size: 20px">Skills:</p><br>
+        <p class="ab normal" style="margin-left: 10px;">
+          Problem-solving<br>
+          Computer and technology knowledge<br>
+          Programming<br>
+          Familiar with C++, C#, Java, Dart, Flutter, HTML<br>
+          Teamwork & cooperation<br>
+          </p><br>
+        <p class="ab bold" style="margin-right: 5px; font-size: 20px">Interest:</p><br>
+        <p class="ab normal" style="margin-left: 10px;">I enjoy coding, creating apps to solve problems. Beside that, I also enjoy playing video games, my usual go-to genres are jrpg, moba, survival, and online-mmorpg.</p>
+  </div>
+  <div style="height: 20px;"></div>
+</body>
+
+</html>

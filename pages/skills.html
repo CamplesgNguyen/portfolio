@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Camplesg Nguyen Portfolio | Skills</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/proj_style.css">
+  <link rel="stylesheet" href="/css/nav_bar_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar" id="navbar">
+    <p class="name">Camplesg Nguyen</p>
+      <div class="nav_buttons">    
+        <a href="../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarSwitch()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+  </div>
+  
+  <script>
+      function navbarSwitch() {
+        var x = document.getElementById("navbar");
+        if (x.className == "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+      }
+  </script>
+  
+  <div style="width: 100vw; height: 100%; left:0; top: 0; position: absolute; z-index: -1; align-content: center; justify-content: center;">
+    <p class="headerfont">Skills</p>
+    <div class="outerbox">
+      <div class="row">
+        <div class="column">
+          <h2 class="pt">Technical</h2>
+          <ul class="ab normal">
+              <li>Proficiency in C++, C#, Java, Dart, and others</li>
+              <li>Understanding of object-oriented programming</li>
+              <li>li>Strong understanding of common data structures</li>
+              <li>Familiarity with software development life cycles</li>
+              <li>Knowledge of concepts like processes, memory management, file systems, and system calls</li>
+              <li>Experience with version control systems like Git and GitHub</li>
+              <li>Problem-solving skills through competitive programming or coding challenges</li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2 class="pt">Non-technical</h2>
+          <ul class="ab normal">
+            <li>Proficiency in verbal and written communication to explain technical concepts to any audiences</li>
+            <li>Creative and analytical thinking to find optimal solutions for problems</li>
+            <li>Ability to work effectively in a team, often in a collaborative coding environment</li>
+            <li>Effective prioritization and time allocation to meet deadlines</li>
+            <li>Willingness to stay updated with rapidly changing technology</li>
+            <li>Ability to quickly learn new programming languages, frameworks, or tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="height: 20px;"></div>
+  </div>
+</body>
+
+</html>

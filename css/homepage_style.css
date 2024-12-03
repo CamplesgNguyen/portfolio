@@ -1,0 +1,79 @@
+.wrapbox {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.outerbox_hp {
+  z-index: -1;
+  width: 35vmax;
+  height: 35vmax;
+  background: rgb(98,57,126);
+  background: linear-gradient(354deg, rgba(98,57,126,1) 0%, rgba(29,195,253,1) 50%, rgba(69,146,252,1) 100%);
+  justify-self: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  justify-self: center;
+  overflow: hidden;
+}
+
+.frame {
+  width: auto;
+  height: 85%;
+  transform: rotate(-45deg);
+  justify-self: center
+}
+
+.hptextbox {
+  width: 60%; 
+  height: min-content; 
+  align-items: center; 
+  align-self: center; 
+  z-index: 100;
+  background-color: rgba(255, 250, 250, 0.178);
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    overflow-y: auto;
+  }
+  .wrapbox {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+  }
+  .outerbox_hp {
+    margin-top: 60px;
+    width: 60vw;
+    height: 60vw;
+  }
+  .hptextbox {
+    width: 100vw;
+    height: auto;
+    margin-top: 0px;
+    background-color: rgba(255, 250, 250, 0.178);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    justify-self: center;
+  }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lucida-handwriting-std');
+@import url('https://fonts.cdnfonts.com/css/noto-serif-khmer');  
+@import url('https://fonts.cdnfonts.com/css/diphylleia');              
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  font-family:'Montserrat';
+  background: rgb(0,0,0);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(148,180,233,1) 100%);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.fontstyle {
+  color: white;
+  text-align: center;
+}
+
+h2.pt {
+  color: white;
+  font-family: 'Noto Serif Khmer', sans-serif;
+  margin-top: 0;
+}
+
+h3.pt {
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+p.pt {
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  margin: 0px;
+  margin-left: 15px;
+}
+
+p.ab.normal {
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  display: inline-block;
+  margin: 0;
+}
+
+p.ab.bold {
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+}
+
+li {
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  list-style-type: circle;
+}
+
+.headerfont {
+  right: 0;
+  font-family: 'Lucida Handwriting Std', sans-serif;
+  font-size: 50px;
+  color: whitesmoke;
+  position: absolute;
+  margin-right: 10%;
+  text-shadow: rgba(54, 191, 255, 0.836) 1px 0 10px;;
+}
+
+.outerbox {
+  z-index: -1;
+  width: 80%;
+  height: fit-content;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.322);
+  border-radius: 25px;
+  margin-top: 100px;
+  padding: 30px;
+}
+

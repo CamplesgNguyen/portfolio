@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Camplesg Nguyen Portfolio | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/proj_style.css">
+  <link rel="stylesheet" href="/css/nav_bar_style.css">
+  <link rel="stylesheet" href="/css/contact_style.css">
+  <link rel="stylesheet" href="css/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar" id="navbar">
+    <p class="name">Camplesg Nguyen</p>
+      <div class="nav_buttons">    
+        <a href="../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarSwitch()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+  </div>
+  
+  <script>
+      function navbarSwitch() {
+        var x = document.getElementById("navbar");
+        if (x.className == "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+      }
+      function messageSubmit() {
+        var x = document.getElementById("submitText");
+        if (x.className == "submitState") {
+            x.className += " submitted";
+        } else {
+            x.className = "submitState";
+        }
+        var y = document.getElementById("submitBtn");
+        y.className = "submitBtnHidden"
+      }
+  </script>
+  
+  <div style="width: 100vw; height: 100%; left:0; top: 0; position: absolute; z-index: -1; align-content: center; justify-content: center;">
+    <p class="headerfont">Contact</p>
+    <div class="outerbox">
+      <div class="social">
+        <a style="float: right;" target="_blank" href="https://github.com/CamplesgNguyen"><img class="sm github" src="../assets/images/Github-desktop-logo-symbol.svg" alt="Github Link"></a>
+      </div>
+
+      <div>
+        <form action="javascript:messageSubmit()">
+          <label class="ab header" for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your first name here">
+      
+          <label class="ab header" for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name here">
+      
+          <label class="ab header" for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Your message here" style="height:200px"></textarea>
+      
+          <input id="submitBtn" type="submit" value="Submit">
+          <p class="submitState" id="submitText">Message sent!</p>
+        </form>
+      </div>
+    </div>
+    <div style="height: 20px;"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+.sm {
+  width: 50px;
+  height: 50px;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.sm:hover {
+  opacity: 0.7;
+}
+
+.sm.github{
+  /* background: #55ACEE; */
+  color: white;
+  border-radius: 100%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #60b0f1bd;
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  font-weight: 900;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(89, 174, 253, 0.534);
+}
+
+.submitState {
+  visibility: hidden;
+  display: inline;
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  font-weight: bold;
+}
+
+.submitState.submitted {
+  visibility: visible;
+  display: inline;
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  font-weight: bold;
+}
+
+
+.submitBtnHidden {
+  visibility: hidden;
+  float: right;
+}
+
+.social {
+  /* background-color: black; */
+  height: 50px;
+  justify-items:center;
+  align-content: center;
+  display: block;
+}
+
+.ab.header {
+  color: white;
+  font-family: 'Diphylleia', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}

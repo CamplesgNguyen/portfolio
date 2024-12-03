@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Camplesg Nguyen Portfolio | Projects</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/proj_style.css">
+  <link rel="stylesheet" href="/css/nav_bar_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="navbar" id="navbar">
+    <p class="name">Camplesg Nguyen</p>
+      <div class="nav_buttons">    
+        <a href="../index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarSwitch()">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+  </div>
+  
+  <script>
+      function navbarSwitch() {
+        var x = document.getElementById("navbar");
+        if (x.className == "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+      }
+      function toggleBookStorePopup() { 
+        document.getElementById("bookstorePopup").classList.toggle('active');
+      };
+      function toggleWorkoutPopup() { 
+        document.getElementById("workoutPopup").classList.toggle('active');
+      };
+      function toggleNavigationPopup() { 
+        document.getElementById("navigationPopup").classList.toggle('active');
+      };
+      function toggleModmanPopup() { 
+        document.getElementById("modmanPopup").classList.toggle('active');
+      };
+      function toggleDlerPopup() { 
+        document.getElementById("dlerPopup").classList.toggle('active');
+      };
+  </script>
+  
+  
+  <div style="width: 100vw; height: 100%; left:0; top: 0; position: absolute; z-index: -1; align-content: center; justify-content: center;">
+    <p class="headerfont">Projects</p>
+    <div class="outerbox">
+      <div class="row">
+        <div class="column">
+          <h2 class="pt">Academic</h2>
+          <h3 class="pt">Antique Publications Bookstore App</h3>
+          <p class="pt">Manage inventory, sales, employees, customers</p>
+          <a href="#" onclick="toggleBookStorePopup()"><p class="detailText">More info</p></a>
+          <h3 class="pt">FIT Workout Planner App</h3>
+          <p class="pt">Workout planning, step-by-step workout intructions</p>
+          <a href="#" onclick="toggleWorkoutPopup()"><p class="detailText">More info</p></a>
+          <h3 class="pt">Campus Navigation App</h3>
+          <p class="pt">CSUF campus navigation with custom path mapping</p>
+          <a href="#" onclick="toggleNavigationPopup()"><p class="detailText">More info</p></a>
+        </div>
+        <div class="column">
+          <h2 class="pt">Personal</h2>
+          <h3 class="pt">PSO2NGS Mod Manager</h3>
+          <p class="pt">Manage, swapping, apply and backup mods for Phantasy Star Online 2 New Genesis</p>
+          <a href="#" onclick="toggleModmanPopup()"><p class="detailText">More info</p></a>
+          <h3 class="pt">PSO2NGS File Downloader</h3>
+          <p class="pt">Search, view and download original game files for Phantasy Star Online 2 New Genesis</p>
+          <a href="#" onclick="toggleDlerPopup()"><p class="detailText">More info</p></a>
+        </div>
+      </div>
+    </div>
+    <div style="height: 20px;"></div>
+  </div>
+
+  <div class="popup" id="bookstorePopup">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="closeBtn" onclick="toggleBookStorePopup()">&times;</div>
+      <h3 class="pt">Antique Publications Bookstore App</h3><br>
+      <p class="pt">Text</p>
+    </div>
+  </div>
+
+  <div class="popup" id="workoutPopup">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="closeBtn" onclick="toggleWorkoutPopup()">&times;</div>
+      <h3 class="pt">FIT Workout Planner App</h3><br>
+      <p class="pt">Text</p>
+    </div>
+  </div>
+
+  <div class="popup" id="navigationPopup">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="closeBtn" onclick="toggleNavigationPopup()">&times;</div>
+      <h3 class="pt">Campus Navigation App</h3><br>
+      <p class="pt">Text</p>
+    </div>
+  </div>
+
+  <div class="popup" id="modmanPopup">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="closeBtn" onclick="toggleModmanPopup()">&times;</div>
+      <h3 class="pt">PSO2NGS Mod Manager</h3><br>
+      <p class="pt">Text</p>
+    </div>
+  </div>
+
+  <div class="popup" id="dlerPopup">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="closeBtn" onclick="toggleDlerPopup()">&times;</div>
+      <h3 class="pt">PSO2NGS File Downloader</h3><br>
+      <p class="pt">Text</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
