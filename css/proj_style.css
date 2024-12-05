@@ -47,18 +47,19 @@ body {
     transform: translate(-50%, -50%) scale(0);
     background-color: rgba(46, 44, 44, 0.842);
     border-radius: 25px;
-    width: 450px;
-    height: 220px;
+    width: 80%;
+    height: 80vh;
     z-index: 11;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 .popup .closeBtn {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 10px;
+    top: 10px;
     width: 30px;
     height: 30px;
     background-color: aliceblue;
