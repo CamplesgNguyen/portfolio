@@ -48,7 +48,7 @@ body {
     background-color: rgba(46, 44, 44, 0.842);
     border-radius: 25px;
     width: 80%;
-    height: 80vh;
+    height: fit-content;
     z-index: 11;
     text-align: center;
     padding: 10px;
